@@ -1,12 +1,11 @@
 // An unruly printing program
 
-public class Unruly
+public class Adjusted
 {
    public static void main(String[] args)
    {
-      System.out.print("These are our top sellers:");
-      System.out.print("Computer games");
-      System.out.print("Coffee");
+      System.out.print("These are our top sellers:\n");
+      System.out.print("Computer games\nCoffee\n");
       System.out.println("Aspirin");
    }
 }
