@@ -1,16 +1,21 @@
-/**
-* This program demonstrates how to use the
-* System.out.printf method to format a
-* number as currency.
+/*
+* This program displays numbers
+* with leading zeros
 */
 
-public class CurrencyFormat{
+public class LeadingZeros {
 
     public static void main(String args[]) {
+        // declare a variety of double variables
+        double number1 = 1.234;
+        double number2 = 12.345;
+        double number13 = 123.456;
 
-        double monthlyPay = 5000.0;
-        double annualPay = monthlyPay * 12;
-
-        System.out.printf("Your Annual Pay is $%,.2f\n", annualPay);
+        //Display each variable leading zeros,
+        //in a field of 9 spaces, rounded to
+        // 2 decimal places
+        System.out.printf("%09.2f\n", number1);
+        System.out.printf("%09.2f\n", number2);
+        System.out.printf("%09.2f\n", number3);
     }
 }
