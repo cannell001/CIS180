@@ -1,14 +1,19 @@
-// This program demonstrates the String class's length method.
+// This program demonstrates a few of the String methods.
 
-public class StringLength
+public class StringMethods
 {
    public static void main(String[] args)
    {
-      String name = "Herman";
-      int stringSize;
+      String message = "Java is Great Fun!";
+      String upper = message.toUpperCase();
+      String lower = message.toLowerCase();
+      char letter = message.charAt(2);
+      int stringSize = message.length();
 
-      stringSize = name.length();
-      System.out.println(name + " has " + stringSize
-                         + " characters.");
+      System.out.println(message);
+      System.out.println(upper);
+      System.out.println(lower);
+      System.out.println(letter);
+      System.out.println(stringSize);
    }
 }
