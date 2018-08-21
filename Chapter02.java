@@ -3,11 +3,7 @@
 * numbers left-justified in columns
 */
 
-<<<<<<< HEAD
 public class LeftJustified {
-=======
-public class LeftJustifi {
->>>>>>> feceec69f4a1c652bc0aff4295bf20cb00ec5aad
 
     public static void main(String args[]) {
         // declare a variety of double variables
