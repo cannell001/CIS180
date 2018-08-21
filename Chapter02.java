@@ -5,23 +5,37 @@ import javax.swing.JOptionPane;
  *  with JOptionPane.
  */
 
-public class NamesDialog
+public class PayrollDialog
 {
    public static void main(String[] args)
    {
-      String firstName, lastName;
+      String name,         // The user's name
+             inputString;  // To hold input
+      int hours;           // Hours worked
+      double payRate,      // Hourly pay rate
+             grossPay;     // Gross pay
 
-      // Get the user's first name.
-      firstName =
-         JOptionPane.showInputDialog("What is your first name?");
+      // Get the user's name.
+      name = JOptionPane.showInputDialog("What is your name?");
 
-      // Get the user's last name.
-      lastName =
-         JOptionPane.showInputDialog("What is your last name?");
+      // Get the hours worked.
+      inputString = JOptionPane.showInputDialog("How many hours " +
+                                        "did you work this week?");
+      hours = Integer.parseInt(inputString);
 
-      // Display a greeting
-      JOptionPane.showMessageDialog(null, "Hello " + firstName + " " +
-                                    lastName);
+      // Get the hourly pay rate.
+      inputString = JOptionPane.showInputDialog("What is your " +
+                                                "hourly pay rate?");
+      payRate = Double.parseDouble(inputString);
+
+      // Calculate the gross pay.
+      grossPay = hours * payRate;
+
+      // Display the results.
+      JOptionPane.showMessageDialog(null, "Hello " + name +
+                        ". Your gross pay is $" + grossPay);
+
+      // End the program.
       System.exit(0);
    }
 }
