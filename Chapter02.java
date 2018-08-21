@@ -1,23 +1,17 @@
-// This program has variables of several of the integer types.
+// This program demonstrates the double data type.
 
-public class IntegerVariables
+public class Sale
 {
    public static void main(String[] args)
    {
-      int checking;  // Declare an int variable named checking.
-      byte miles;    // Declare a byte variable named miles.
-      short minutes; // Declare a short variable named minutes.
-      long diameter; // Declare a long variable named diameter.
+      double price, tax, total;
 
-      checking = -20;
-      miles = 105;
-      minutes = 120;
-      diameter = 100000;
-      System.out.print("We have made a journey of " + miles);
-      System.out.println(" miles.");
-      System.out.println("It took us " + minutes + " minutes.");
-      System.out.println("Our account balance is $" + checking);
-      System.out.print("The galaxy is " + diameter +
-                       " light years in diameter.");
+      price = 29.75;
+      tax = 1.76;
+      total = 31.51;
+      System.out.println("The price of the item "
+                         + "is " + price);
+      System.out.println("The tax is " + tax);
+      System.out.println("The total is " + total);
    }
 }
