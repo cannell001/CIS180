@@ -1,21 +1,27 @@
 /*
-* This program displays numbers
-* with leading zeros
+* This program displays a variety of
+* numbers left-justified in columns
 */
 
-public class LeadingZeros {
+<<<<<<< HEAD
+public class LeftJustified {
+=======
+public class LeftJustifi {
+>>>>>>> feceec69f4a1c652bc0aff4295bf20cb00ec5aad
 
     public static void main(String args[]) {
         // declare a variety of double variables
-        double number1 = 1.234;
-        double number2 = 12.345;
-        double number13 = 123.456;
+        int num1 = 123;
+        int num2 = 12;
+        int num3 = 45678;
+        int num4 = 456;
+        int num5 = 1234567;
+        int num6 = 1234;
 
-        //Display each variable leading zeros,
-        //in a field of 9 spaces, rounded to
-        // 2 decimal places
-        System.out.printf("%09.2f\n", number1);
-        System.out.printf("%09.2f\n", number2);
-        System.out.printf("%09.2f\n", number3);
+        //Display each variable left-justified
+        //in a field of 8 spaces
+        System.out.printf("%-8d%-8d\n", num1, num2);
+        System.out.printf("%-8d%-8d\n", num3, num4);
+        System.out.printf("%-8d%-8d\n", num5, num6);
     }
 }
