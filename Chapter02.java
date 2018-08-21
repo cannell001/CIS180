@@ -1,14 +1,14 @@
-// A program for demonstrating boolean variables
+// This program demonstrates the char data type.
 
-public class TrueFalse
+public class Letters
 {
    public static void main(String[] args)
    {
-      boolean bool;
+      char letter;
 
-      bool = true;
-      System.out.println(bool);
-      bool = false;
-      System.out.println(bool);
+      letter = 'A';
+      System.out.println(letter);
+      letter = 'B';
+      System.out.println(letter);
    }
 }
