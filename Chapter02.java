@@ -1,15 +1,12 @@
-// This program demonstrates the close relationship between
-// characters and integers.
+// This program shows variable initialization.
 
-public class Letters2
+public class Initialize
 {
    public static void main(String[] args)
    {
-      char letter;
+      int month = 2, days = 28;
 
-      letter = 65;
-      System.out.println(letter);
-      letter = 66;
-      System.out.println(letter);
+      System.out.println("Month " + month + " has "
+                         + days + " days.");
    }
 }
