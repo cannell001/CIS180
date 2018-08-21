@@ -1,16 +1,14 @@
-// This program uses E notation.
+// A program for demonstrating boolean variables
 
-public class SunFacts
+public class TrueFalse
 {
    public static void main(String[] args)
    {
-      double distance, mass;
+      boolean bool;
 
-      distance = 1.495979E11;
-      mass = 1.989E30;
-      System.out.print("The Sun is " + distance);
-      System.out.println(" meters away.");
-      System.out.print("The Sun's mass is " + mass);
-      System.out.println(" kilograms.");
+      bool = true;
+      System.out.println(bool);
+      bool = false;
+      System.out.println(bool);
    }
 }
