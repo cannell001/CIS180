@@ -1,13 +1,13 @@
-// This program has a variable.
+// This program has literals and a variable.
 
-public class Variable2
+public class Literals
 {
    public static void main(String[] args)
    {
-      int value;
+      int apples;
 
-      value = 5;
-      System.out.print("The value is ");
-      System.out.println("value");
+      apples = 20;
+      System.out.print("Today we sold " + apples + " bushels\n");
+      System.out.print("of apples.\n");
    }
 }
