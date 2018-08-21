@@ -1,12 +1,14 @@
-// A simple program demonstrating String objects.
+// This program demonstrates the String class's length method.
 
-public class StringDemo
+public class StringLength
 {
    public static void main(String[] args)
    {
-      String greeting = "Good morning ";
       String name = "Herman";
+      int stringSize;
 
-      System.out.println(greeting + name);
+      stringSize = name.length();
+      System.out.println(name + " has " + stringSize
+                         + " characters.");
    }
 }
