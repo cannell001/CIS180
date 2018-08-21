@@ -1,28 +1,32 @@
-// This program calculates hourly wages plus overtime.
+// This program calculates the amount of pay that
+// will be contributed to a retirement plan if 5%,
+// 7%, or 10 % of monthly pay is withheld.
 
-public class Wages
+public class Contribution
 {
    public static void main(String[] args)
    {
-      double regularWages,       // Regular wages.
-             basePay = 25,       // Base pay rate.
-             regularHours = 40,  // Hours worked less overtime.
-             overtimeWages,      // Overtime wages
-             overtimePay = 37.5, // Overtime pay rate
-             overtimeHours = 10, // Overtime hours worked
-             totalWages;         // Total wages
+      // Variables to hold the monthly pay and
+      // the amount of contribution.
+      double monthlyPay = 6000.0;
+      double contribution;
 
-      // Calculate the regular wages.
-      regularWages = basePay * regularHours;
+      // Calculate and display a 5% contribution.
+      contribution = monthlyPay * 0.05;
+      System.out.println("5 percent is $" +
+                         contribution +
+                         " per month.");
 
-      // Calculate the overtime wages.
-      overtimeWages = overtimePay * overtimeHours;
+      // Calculate and display a 8% contribution.
+      contribution = monthlyPay * 0.08;
+      System.out.println("8 percent is $" +
+                         contribution +
+                         " per month.");
 
-      // Calculate the total wages.
-      totalWages = regularWages + overtimeWages;
-
-      // Display the total wages.
-      System.out.print("Wages for this week are $");
-      System.out.println(totalWages);
+      // Calculate and display a 10% contribution.
+      contribution = monthlyPay * 0.1;
+      System.out.println("10 percent is $" +
+                         contribution +
+                         " per month.");
    }
-}  
+}
