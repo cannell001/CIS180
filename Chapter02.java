@@ -1,32 +1,27 @@
-// This program calculates the amount of pay that
-// will be contributed to a retirement plan if 5%,
-// 7%, or 10 % of monthly pay is withheld.
+// This program calculates the sale price of an
+// item that is regularly priced at $59, with
+// a 20 percent discount subtracted.
 
-public class Contribution
+public class Discount
 {
    public static void main(String[] args)
    {
-      // Variables to hold the monthly pay and
-      // the amount of contribution.
-      double monthlyPay = 6000.0;
-      double contribution;
+      // Variables to hold the regular price, the
+      // amount of a discount, and the sale price.
+      double regularPrice = 59.0;
+      double discount;
+      double salePrice;
 
-      // Calculate and display a 5% contribution.
-      contribution = monthlyPay * 0.05;
-      System.out.println("5 percent is $" +
-                         contribution +
-                         " per month.");
+      // Calculate the amount of a 20% discount.
+      discount = regularPrice * 0.2;
 
-      // Calculate and display a 8% contribution.
-      contribution = monthlyPay * 0.08;
-      System.out.println("8 percent is $" +
-                         contribution +
-                         " per month.");
+      // Calculate the sale price by subtracting
+      // the discount from the regular price.
+      salePrice = regularPrice - discount;
 
-      // Calculate and display a 10% contribution.
-      contribution = monthlyPay * 0.1;
-      System.out.println("10 percent is $" +
-                         contribution +
-                         " per month.");
+      // Display the results.
+      System.out.println("Regular price: $" + regularPrice);
+      System.out.println("Discount amount $" + discount);
+      System.out.println("Sale price: $" + salePrice);
    }
 }
