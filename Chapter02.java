@@ -1,10 +1,12 @@
-// This is another simple Java program.
+// An unruly printing program
 
-public class GreatFun
+public class Unruly
 {
    public static void main(String[] args)
    {
-      System.out.print("Programming is ");
-      System.out.println("great fun!");
+      System.out.print("These are our top sellers:");
+      System.out.print("Computer games");
+      System.out.print("Coffee");
+      System.out.println("Aspirin");
    }
 }
