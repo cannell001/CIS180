@@ -1,17 +1,16 @@
-// This program demonstrates the double data type.
+// This program uses E notation.
 
-public class Sale
+public class SunFacts
 {
    public static void main(String[] args)
    {
-      double price, tax, total;
+      double distance, mass;
 
-      price = 29.75;
-      tax = 1.76;
-      total = 31.51;
-      System.out.println("The price of the item "
-                         + "is " + price);
-      System.out.println("The tax is " + tax);
-      System.out.println("The total is " + total);
+      distance = 1.495979E11;
+      mass = 1.989E30;
+      System.out.print("The Sun is " + distance);
+      System.out.println(" meters away.");
+      System.out.print("The Sun's mass is " + mass);
+      System.out.println(" kilograms.");
    }
 }
