@@ -1,41 +1,27 @@
-import javax.swing.JOptionPane;
+/*
+* This program displays a variety of
+* floating point numbers in a column
+* with their decimal points aligned
+*/
 
-/**
- *  This program demonstrates using dialogs
- *  with JOptionPane.
- */
+public class Columns {
 
-public class PayrollDialog
-{
-   public static void main(String[] args)
-   {
-      String name,         // The user's name
-             inputString;  // To hold input
-      int hours;           // Hours worked
-      double payRate,      // Hourly pay rate
-             grossPay;     // Gross pay
+    public static void main(String args[]) {
+        // declare a variety of double variables
+        double num1 = 127.899;
+        double num2 = 3465.148;
+        double num3 = 3.776;
+        double num4 = 264.821;
+        double num5 = 88.081;
+        double num6 = 1799.999;
 
-      // Get the user's name.
-      name = JOptionPane.showInputDialog("What is your name?");
-
-      // Get the hours worked.
-      inputString = JOptionPane.showInputDialog("How many hours " +
-                                        "did you work this week?");
-      hours = Integer.parseInt(inputString);
-
-      // Get the hourly pay rate.
-      inputString = JOptionPane.showInputDialog("What is your " +
-                                                "hourly pay rate?");
-      payRate = Double.parseDouble(inputString);
-
-      // Calculate the gross pay.
-      grossPay = hours * payRate;
-
-      // Display the results.
-      JOptionPane.showMessageDialog(null, "Hello " + name +
-                        ". Your gross pay is $" + grossPay);
-
-      // End the program.
-      System.exit(0);
-   }
+        //Display each variable in a field of
+        //8 spaces with 2 decimal places
+        System.out.printf("%8.2f\n", num1);
+        System.out.printf("%8.2f\n", num2);
+        System.out.printf("%8.2f\n", num3);
+        System.out.printf("%8.2f\n", num4);
+        System.out.printf("%8.2f\n", num5);
+        System.out.printf("%8.2f\n", num6);
+    }
 }
